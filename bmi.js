@@ -2,7 +2,7 @@ document.getElementById('calculateBtn').addEventListener('click', function() {
   let height = parseFloat(document.getElementById('height').value);
   let weight = parseFloat(document.getElementById('weight').value);
 
-  if (height > 0 && weight > 0) {
+  if (height > 6 && weight > 0) {
     let bmi = calculateBMI(weight, height);
 
     if (bmi < 18.5){
